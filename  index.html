@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>وازن | WAZEN</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar">
+      <div class="sidebar-top">
+
+        <div class="logo-box">
+          <img src="assets/logo.png" alt="WAZEN Logo" class="logo" />
+        </div>
+
+        <div class="language-box">
+          <label for="langSelect">Language | اللغة</label>
+          <select id="langSelect">
+            <option value="Arabic">Arabic</option>
+            <option value="English">English</option>
+          </select>
+        </div>
+
+        <div id="companyBadge" class="company-badge hidden"></div>
+        <div id="roleBadge" class="role-badge hidden"></div>
+
+        <nav id="sidebarNav" class="sidebar-nav hidden"></nav>
+      </div>
+
+      <div class="sidebar-bottom">
+        <button id="logoutBtn" class="secondary-btn hidden"></button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <div id="pageRoot"></div>
+    </main>
+  </div>
+</body>
+</html>
